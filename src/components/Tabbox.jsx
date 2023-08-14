@@ -13,8 +13,8 @@ function Tabbox() {
 			<div className=" border-t-2 border-b-2 h-full border-black overflow-hidden text-ol drop-shadow">
 				<Tabs className="text-black bg-white h-1/6 border-b-2 border-black" value={currentTabIndex} onChange={handleTabChange}>
 					<Tab label="< Projects />" />
-					<Tab label="< Tab 2 />" />
-					<Tab label="Tab 3" />
+					<Tab label="< Timeline />" />
+					<Tab label="< Info />" />
 				</Tabs>
 				<div className="bg-red-200  ">
 					{/* TAB 1 Contents */}
@@ -27,14 +27,14 @@ function Tabbox() {
 					{/* TAB 2 Contents */}
 					{currentTabIndex === 1 && (
 						<Box sx={{ p: 3 }}>
-							<Typography variant="h5">Tab 2 Content</Typography>
+							<Typography variant="h5">Tab 2 Content: Heatmap Graph</Typography>
 						</Box>
 					)}
 
 					{/* TAB 3 Contents */}
 					{currentTabIndex === 2 && (
 						<Box sx={{ p: 3 }}>
-							<Typography variant="h5">Tab 3 Content</Typography>
+							<Typography variant="h5">Tab 3 Content: Contact</Typography>
 						</Box>
 					)}
 				</div>

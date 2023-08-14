@@ -1,19 +1,17 @@
 import { useState } from "react";
 import Tabbox from "./components/Tabbox";
+
 // import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+
 import "./App.css";
 
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SendIcon from "@mui/icons-material/Send";
-import MenuIcon from "@mui/icons-material/Menu";
-
 import Navbar from "./components/Navbar";
+
 import Intro from "./components/Intro";
 
 import propic from "./assets/propic.jpeg";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail, AiOutlineSend, AiOutlineMenu, AiOutlineInstagram } from "react-icons/ai";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -30,9 +28,11 @@ function App() {
 			<div className="h-full bg-white">
 				{/* Nav */}
 				<div className="bg-green-300 h-2/6 border-b-2 border-black">
-					<div className="bg-red-200 h-1/3 flex justify-end pr-8 items-center text-4xl ">
-						<MenuIcon viewBox="0 0 20 20" class="w-10 h-10 fill-current " />
+					<div className="bg-red-200 h-1/3  pr-4 text-4xl ">
+						{/* <MenuIcon viewBox="0 0 20 20" class="w-10 h-10 fill-current " /> */}
+						<Navbar />
 					</div>
+					{/* <Navbar /> */}
 
 					{/* intro */}
 
@@ -83,8 +83,14 @@ function App() {
 				{/* Bottom */}
 
 				<div className="bg-green-500 h-1/6 flex flex-row flex-wrap items-center justify-center p-2 ">
-					<div className="bg-yellow-300  w-full rounded-3xl items-center justify-between overflow-hidden   flex p-0 h-full">
-						<div className="bg-blue-100 h-full w-1/4 flex items-center justify-center object-cover p-3">
+					<div className="bg-yellow-300  w-full rounded-3xl items-center  overflow-hidden    flex h-full px-0 z-50">
+						<div className="text-6xl w-full flex gap-8 py-0 px-4 ">
+							<AiFillGithub />
+							<AiFillLinkedin />
+							<AiOutlineInstagram />
+							<AiOutlineSend />
+						</div>
+						{/* <div className="bg-blue-100 h-full w-1/4 flex items-center justify-center object-cover p-3">
 							<GitHubIcon viewBox="0 0 25 25" class="w-20 h-auto fill-current " />
 						</div>
 
@@ -96,7 +102,7 @@ function App() {
 						</div>
 						<div className="bg-blue-100 h-full w-1/4 flex items-center justify-center object-cover p-3">
 							<GitHubIcon viewBox="0 0 25 25" class="w-20 h-auto fill-current bg-black rounded-2xl fill-white  " />
-						</div>
+						</div> */}
 					</div>
 					{/* <div className="h-1/3 w-full flex items-end bg-gray-700"></div> */}
 				</div>
