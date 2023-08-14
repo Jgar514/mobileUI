@@ -25,16 +25,13 @@ export default function Header() {
 						</div>
 						<ul className="flex flex-col  ">
 							<li className="border-b border-gray-400 my-4 uppercase">
-								<a href="/about">About</a>
+								<a href="/about">Test1</a>
 							</li>
 							<li className="border-b border-gray-400 my-4 uppercase">
-								<a href="/portfolio">Portfolio</a>
+								<a href="/portfolio">Test2</a>
 							</li>
 							<li className="border-b border-gray-400 my-4 uppercase">
-								<a href="/contact">Contact</a>
-							</li>
-							<li className="border-b border-gray-400 my-4 uppercase">
-								<a href="/contact">Contact</a>
+								<a href="/contact">Test3</a>
 							</li>
 						</ul>
 					</div>
