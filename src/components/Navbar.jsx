@@ -4,7 +4,7 @@ export default function Header() {
 	const [isNavOpen, setIsNavOpen] = useState(false);
 
 	return (
-		<div className="flex items-center justify-end border-b border-black py-6 px-6">
+		<div className="flex items-center justify-end  border-b-2 border-black bg-manilla-500 py-6 px-6">
 			{/* <a href="/">
 				<img src="https://designbygio.it/images/logo.png" alt="logo" />
 			</a> */}
